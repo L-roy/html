@@ -48,15 +48,25 @@
 			background-color: grey;
 			border: none;
 			color: black;
-			padding: 15px 32px;
+			padding: 15px 20px;
 			position: left;
 			text-align: center;
 			text-decoration: none;
 			display: inline-block;
 			font-size: 16px;
 			cursor: pointer;
-			margin:auto;
+			margin:left;
 			display:block
+		}
+		.form {
+			padding: 20px 45px;
+			position: center;
+			margin:auto;
+		}
+		.text {
+			text-align: center;
+			color: dark-gray;
+		}
         </style>
         <title>ZBookBox</title>
         <meta charset="utf-8" />
@@ -71,23 +81,7 @@
                 <h1>ZBookBox</h1>
                 <p>Надихає на читання</p>
             </div>
-			<button class="button button1">Замовити собі коробочку</button>
-			<form action="/action.html">
-				Ваше ім'я:<br>
-				<input type="text" name="firstname">
-				<br>
-				Ваше прізвище:<br>
-				<input type="text" name="lastname"">
-				<br>
-				Місто:<br>
-				<input type="text" name="city">
-				<br>
-				Відділення Нової Пошти:<br>
-				<input type="text" name="post">
-
-				<br><br>
-				<input type="submit" class="submit-button" value="Відправити заявку">
-			</form> 
+			<button class="button button1"><a href="#order">Замовити собі коробочку</a></button>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
@@ -125,5 +119,22 @@
                 </div>
             </div>
         </div>
+		<h2 id ="order"; class="text">Все дуже просто!<br> Заповнюйте заявку і ми зв'яжемось з вами вже найближчим часом :)</h2>
+		<form action="/action_page.php" class="form">
+				Ваше ім'я:<br>
+				<input type="text" name="firstname">
+				<br>
+				Ваше прізвище:<br>
+				<input type="text" name="lastname"">
+				<br>
+				Місто:<br>
+				<input type="text" name="city">
+				<br>
+				Відділення Нової Пошти:<br>
+				<input type="text" name="post">
+
+				<br><br>
+				<input type="submit" class="submit-button" value="Відправити заявку">
+			</form> 
     </body>
 </html>
